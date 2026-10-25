@@ -1,6 +1,6 @@
 // CountVowels.cpp - Anna Myers - 22 October 2026
-// Description: Counts the voewels in a string entered by the user
-// Part b of countCharacters
+// Description: Counts the vowels in a string entered by the user
+// Part a+b of countCharacters which changed to countVowels
 
 #include <iostream>
 #include <string>
