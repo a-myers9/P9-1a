@@ -1,5 +1,5 @@
 // CountVowels.cpp - Anna Myers - 22 October 2026
-// Description: Counts characters in string literals
+// Description: Counts characters in string literals.
 
 #include <iostream>
 #include <string>
