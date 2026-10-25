@@ -1,5 +1,6 @@
 // CountVowels.cpp - Anna Myers - 22 October 2026
-// Description: Counts characters in string literals.
+// Description: Counts the voewels in a string entered by the user
+// Part b of countCharacters
 
 #include <iostream>
 #include <string>
@@ -7,10 +8,10 @@
 using namespace std;
 
 // Function prototypes
-int countCharacter(string);
+int countVowel(string str);
 
 int main(void) {
-	// define string 
+	// Define string 
 	string str;
 
 	// User input
@@ -18,15 +19,25 @@ int main(void) {
 	getline(cin, str);
 
 	// Call the function and display the result
-	cout << countCharacter(str) << endl;
+	cout << countVowel(str) << endl;
 
 	return 0;
 }
 
 // Returns the number of characters in str (spaces and punctation count)
-int countCharacter(string str) {
+int countVowel(string str) {
 	// Define variable and identify length
-	int length = str.length();
+	int count = 0;
 
-	return length;
+	// Look at each character in string
+	for (int i = 0; i < str.length(); i++) {
+		char c = str[i];
+
+		// if the character is a vowel, add 1
+		if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')
+		{
+			count++;
+		}
+	}
+	return count;
 }
